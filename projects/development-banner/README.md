@@ -64,4 +64,4 @@ _For Example:_
 |*closeable*|boolean|true|to make the banner closeable or not|
 |*animatedText*|boolean|false|to make text animated|
 |*animationBehavior*|string|scroll|to change the animation behavior of text|
-|*animationSpeed*|number|500|to change text's animation speed|
+|*animationSpeed*|number|6|to change text's animation speed|
