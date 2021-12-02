@@ -52,10 +52,11 @@ _For Example:_
 **Properties**
 
 | property name | type | default value | description |
+
 | -- | -- | -- | -- | -- | -- | 
 | *align*  | string | center | alignment of the banner |
 | *textAlign* | string | center | the text alignment |
-| valign* | string | top | vertical alignment of the banner | 
+| *valign* | string | top | vertical alignment of the banner | 
 |*fixed* | boolean| false| to make the banner fixed on the screen |
 |*transparent*| boolean| false |to make the banner transparent or opaque|
 |*fullWidth* | boolean| true|to make the banner' width 100% or fit-content|
