@@ -52,8 +52,6 @@ _For Example:_
 **Properties**
 
 | property name | type | default value | description |
-
-| -- | -- | -- | -- | -- | -- | 
 | *align*  | string | center | alignment of the banner |
 | *textAlign* | string | center | the text alignment |
 | *valign* | string | top | vertical alignment of the banner | 
