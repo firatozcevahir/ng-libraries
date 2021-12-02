@@ -19,7 +19,6 @@ export class MainComponent implements OnInit {
   constructor(
     private bannerService: DevelopmentBannerService
   ) {
-    console.log(this.bannerService.config);
    }
 
   ngOnInit(): void {

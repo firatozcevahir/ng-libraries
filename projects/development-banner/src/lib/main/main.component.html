@@ -1,17 +1,26 @@
 <div *ngIf="showPanel">
-  <div
-  [ngClass]="[
-  config.panelClass && config.panelClass !== '' ? config.panelClass : 'development-banner-container',
+  <div [ngClass]="[
+  config.panelClass,
   'banner-text-' + config.textAlign,
   config.transparent ? 'banner-transparent' : '',
   config.fixed ? 'banner-fixed' : '',
   'banner-valign-' + config.valign,
   'banner-align-' + config.align,
   config.fullWidth ? 'banner-full-width' : ''
-  ]"
-  >
-    {{config.text}}
+  ]">
+    <div class="development-banner-inner">
+      <div class="development-banner-inner-text">
+        <div *ngIf="config.animatedText; then animatedText; else notAnimatedText"></div>
+        <ng-template #animatedText>
+          <marquee [behavior]="config.animationBehavior" [scrollAmount]="config.animationSpeed">{{config.text}}
+          </marquee>
+        </ng-template>
+        <ng-template #notAnimatedText>{{config.text}}</ng-template>
+      </div>
+      <div class="development-banner-inner-btn">
+        <button type="button" class="close-btn" *ngIf="config.closeable" (click)="closePanel()">X</button>
+      </div>
+    </div>
 
-    <button type="button" class="close-btn" *ngIf="config.closeable" (click)="closePanel()">X</button>
   </div>
 </div>

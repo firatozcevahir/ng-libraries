@@ -6,7 +6,9 @@ export class BannerServiceConfig {
   transparent?: boolean = false;
   fullWidth?: boolean = true;
   text?: string = 'DEVELOPMENT MODE ON!!';
-  panelClass?: string = '';
+  panelClass?: string = 'development-banner-container';
   closeable?: boolean = true;
   animatedText?: boolean = false;
+  animationBehavior?: 'alternate' | 'slide' | 'scroll' = 'scroll';
+  animationSpeed?: number = 6;
 }

@@ -1,6 +1,5 @@
 .development-banner-container {
   background: #c93b3b;
-  padding: 15px;
   /*text-align: center;*/
   margin: 0;
   color: #fff;
@@ -9,12 +8,29 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   z-index: 9999;
 }
+.development-banner-inner{
+  margin: auto;
+  display: flex;
+  padding: 15px;
+}
+.development-banner-inner-text {
+  flex: 100%;
+}
+
+.banner-full-width {
+  width: 100%;
+  position: relative;
+}
+
+.banner-fixed {
+  position: fixed;
+}
 
 /* BANNER TEXT Alignment*/
 .banner-text-center {
   text-align: center;
 }
-.banner-tex-left {
+.banner-text-left {
   text-align: left;
 }
 .banner-text-right {
@@ -34,28 +50,20 @@
 
 .banner-align-center {
   margin: 0 auto;
-  width: fit-content;
 }
 .banner-align-left {
   left: 0;
+  position: fixed;
 }
 
 .banner-align-right {
   right: 0;
-  position: fixed;
 }
 
 /* END BANNER Alignment*/
 
 .banner-transparent {
   opacity: 0.4;
-}
-
-.banner-fixed {
-  position: fixed;
-}
-.banner-full-width {
-  width: 100%;
 }
 
 .close-btn {
@@ -69,3 +77,4 @@
   /* border: 1px solid #e2e2e2; */
   margin-left: 10px;
 }
+
