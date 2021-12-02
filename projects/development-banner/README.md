@@ -42,6 +42,7 @@ Then you can add `<development-banner></development-banner>` to your `app.compon
 <br>
 
 **CONFIGURATION**
+
 You can configure your banner in your `app.module.ts` 
 
 _For Example:_
@@ -49,6 +50,7 @@ _For Example:_
     DevelopmentBannerModule.forRoot({animatedText: true})
 
 **Properties**
+
 | property name | type | default value | description |
 | -- | -- | -- | -- | -- | -- | 
 | *align*  | string | center | alignment of the banner |
